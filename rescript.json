@@ -1,0 +1,24 @@
+{
+  "name": "coronate",
+  "jsx": { "version": 4 },
+  "sources": [
+    { "dir": "src", "subdirs": true },
+    { "dir": "__tests__", "type": "dev" },
+    { "dir": "testutils", "type": "dev" }
+  ],
+  "package-specs": [{ "module": "esmodule", "in-source": true }],
+  "suffix": ".res.js",
+  "namespace": true,
+  "bs-dependencies": [
+    "@rescript/core",
+    "@ryyppy/rescript-promise",
+    "@rescript/react",
+    "rescript-webapi",
+    "rescript-blossom"
+  ],
+  "bsc-flags": ["-open RescriptCore"],
+  "warnings": {
+    "number": "+A-48-42",
+    "error": "+A-3-44-102"
+  }
+}
